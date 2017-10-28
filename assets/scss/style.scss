@@ -67,7 +67,7 @@ html, body {
     background-color: rgba(0,0,0,.3);
   }
   &:first-child {
-    background-image: url(https://s8.postimg.org/lf2udl5np/4_Aihmii.jpg);
+    background-color: #5D576B;
     transform: translateY(-$parallax-offset / 2);
     .content-wrapper {
       transform: translateY($parallax-offset /2);

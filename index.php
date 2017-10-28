@@ -3,7 +3,7 @@
 
   <section class="background">
     <div class="content-wrapper">
-      <img style="max-width:80%;margin:auto;" class="img-responsive center-block wrapper coverImage" src="figs/cover.jpg">
+      <img style="max-width:80%;margin:auto;" class="img-responsive center-block wrapper coverImage" src="figs/dingdongsCover.png">
     </div>
   </section>
   <section class="background">
