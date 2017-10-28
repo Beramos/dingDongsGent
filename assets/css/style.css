@@ -97,7 +97,7 @@ html, body {
   transform: translateY(30vh);
 }
 .background.down-scroll {
-  transform: translate3d(0, -130vh, 0);
+  transform: translate3d(0, -140vh, 0);
 }
 .background.down-scroll .content-wrapper {
   transform: translateY(40vh);
