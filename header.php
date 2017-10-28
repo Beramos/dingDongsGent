@@ -26,7 +26,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
-
+<!--
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -43,9 +43,9 @@
               <li><a href="#contact">Contact</a></li>
               <li><a href="#bestel">Bestel</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <div class="container">
