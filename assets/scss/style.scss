@@ -21,7 +21,8 @@ body {
 
 /*----- General styling -----*/
 img.coverImage {
-    max-width:80%;
+    max-width:70%;
+    max-height: 90%;
     margin:auto;
 }
 
@@ -37,7 +38,7 @@ img.coverImage {
 $parallax-offset: 30vh;
 $content-offset: 40vh;
 $transition-speed: 1.2s;
-$slide-number: 3;
+$slide-number: 4;
 
 html, body {
   overflow: hidden;
@@ -64,7 +65,7 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,1.);
   }
   &:first-child {
     background-color: #5D576B;
@@ -74,10 +75,13 @@ html, body {
     }
   }
   &:nth-child(2) {
-    background-image: url(https://s8.postimg.org/ow4wgk4px/ugqti_Lg.jpg);
+    background-color: #EDEDED;
   }
   &:nth-child(3) {
-    background-image: url(https://s8.postimg.org/grwsbtiat/x_ZMOBTj.jpg);
+    background-color: #F7567C;
+  }
+  &:nth-child(4) {
+    background-color: #77878B;
   }
 }
 
