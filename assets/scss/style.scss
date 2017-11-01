@@ -26,6 +26,51 @@ img.coverImage {
     margin:auto;
 }
 
+img.secondImage {
+    max-width:70%;
+    max-height: 70%;
+    margin:auto;
+}
+
+
+div#definition {
+    float:left;
+    color:#5D576B;
+    font-size:60px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+div#definition > p {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.row {
+    height: 80%;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p.nameDude{
+    font-size:40px;
+}
+
 /*----- Parallax shizzle -----*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
@@ -78,7 +123,7 @@ html, body {
     background-color: #EDEDED;
   }
   &:nth-child(3) {
-    background-color: #F7567C;
+    background-color: #5D576B;
   }
   &:nth-child(4) {
     background-color: #77878B;
