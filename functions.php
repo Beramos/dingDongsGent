@@ -18,7 +18,7 @@ function add_my_scripts() {
   wp_register_script(
         'parallax', // name your script so that you can attach other scripts and de-register, etc.
         get_template_directory_uri() . '/js/parallax.js', // this is the location of your script file
-        array('jquery'));
+        array('jquery'),'', true);
   wp_enqueue_script( 'parallax');
 }
 
