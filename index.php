@@ -1,9 +1,29 @@
 <?php get_header(); ?>   
 
-
   <section class="background">
     <div class="content-wrapper">
+        <div class="navigation" style="display: block;">
+            <div>
+                <ul>
+                    <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a href="#homepage-introduction" class="active">
+                        Home
+                        </a>
+                    </li>
+                    <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a href="#homepage-technology" class="">Voorbeeld</a></li>
+                    <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <a href="#homepage-tech-spotlight">
+                    Contact
+                    </a>
+                    </li>
+                    <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a href="#homepage-why-music">Bestel</a></li>
+                </ul>
+            </div>
+        </div>
       <img style="max-width:80%;margin:auto;" class="img-responsive center-block wrapper coverImage" src="figs/dingdongsCoverNoName.png">
+      <div data-elementsize="" class="top-down" style="transform: scale(0.949);">
+        <img src="figs/arrow-down.png">
+      </div>
     </div>
   </section>
   <section class="background">

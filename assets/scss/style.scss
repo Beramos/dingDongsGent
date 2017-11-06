@@ -22,7 +22,7 @@ body {
 /*----- General styling -----*/
 img.coverImage {
     max-width:70%;
-    max-height: 90%;
+    max-height: 80%;
     margin:auto;
 }
 
@@ -93,7 +93,31 @@ p.nameDude{
     width: 30%;
 }
 
+.top-down {
+    padding-bottom: 30px;
+}
 
+.navigation {
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    max-width: 60%;
+    padding-top: 5%;
+    float: right;
+}
+
+.navigation ul>li {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: #F0C46D;
+}
 
 /*----- Parallax shizzle -----*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
