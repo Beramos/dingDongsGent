@@ -119,6 +119,59 @@ a:hover{
     color: #F0C46D;
 }
 
+#fp-nav {
+    margin: 0;
+    padding: 0;
+    right:17px;
+    position: fixed;
+    top: 50%;
+    z-index: 80;
+}
+
+#fp-nav ul {
+    list-style-type: disc;
+    margin: 0 0 0 0;
+}
+
+#fp-nav ul li{
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 34px 6px;
+    position: relative;
+}
+
+#fp-nav ul li a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-color: white;
+}
+
+
+#fp-nav ul li a span{
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: 0 0;
+    position: absolute;
+    opacity: 0.3;
+    transition: opacity .2s ease,background .2s ease;
+}
+
+#fp-nav ul li a.active > span{
+    opacity: 1;
+    background: #fff;
+}
+
 /*----- Parallax shizzle -----*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 

@@ -26,7 +26,7 @@
       </div>
     </div>
   </section>
-  <section class="background">
+  <section class="background" id>
     <div class="content-wrapper">
      <div id="definition">
         <p>DING . DONG (de; m; meervoud: dingdongs)</p>    
