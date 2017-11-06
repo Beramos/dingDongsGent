@@ -45,7 +45,20 @@
     <div class="content-wrapper">
       <p class="content-title">Etiam consequat lectus.</p>
       <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+      <table class="copyrightFooter">
+          <tbody>
+            <tr>
+              <td>Ding Dongs Gent ©2017
+              </td>
+              <td class="share__mail"><a href="mailto:info@ddg.bd">info<span>@</span>ddg.be</a></td>
+            </tr>
+          </tbody>
+        </table>
     </div>
   </section>
+</div> <!-- /container -->
 
-<?php get_footer(); ?>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+    <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+  </body>
+</html>

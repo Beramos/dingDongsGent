@@ -24,6 +24,7 @@ function add_my_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'add_my_scripts' );
 
+
 function modify_jquery_version() {
     if (!is_admin()) {
         wp_deregister_script('jquery');
@@ -32,6 +33,7 @@ function modify_jquery_version() {
         wp_enqueue_script('jquery');
     }
 }
-add_action('init', 'modify_jquery_version');
+add_action('wp_enqueue_scripts', 'modify_jquery_version');
+
 
 ?>

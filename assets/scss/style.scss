@@ -15,8 +15,8 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 @import url('../../bootstrap/css/bootstrap.css'); 
 @import url('../../bootstrap/css/bootstrap-responsive.css'); */
 body { 
-     padding-top: 60px; 
-     padding-bottom: 40px; 
+     padding-top: 0; 
+     padding-bottom: 0;
 }
 
 /*----- General styling -----*/
@@ -70,6 +70,30 @@ div#definition > p {
 p.nameDude{
     font-size:40px;
 }
+
+.copyrightFooter {
+    margin: 0 auto;
+    border-spacing: 0;
+    position: relative;
+    width: 60%;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: white;
+    margin-top: 5%;
+}
+
+.copyrightFooter td {
+    font-size: 20px;
+    vertical-align: middle;
+    padding-top: 15px;
+}
+
+.share__mail {
+    white-space: nowrap;
+    width: 30%;
+}
+
+
 
 /*----- Parallax shizzle -----*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
@@ -174,7 +198,7 @@ html, body {
 }
 
 .background.down-scroll {
-  transform: translate3d(0,-(110vh + $parallax-offset),0);
+  transform: translate3d(0,-(100vh + $parallax-offset),0);
   .content-wrapper {
     transform: translateY($content-offset);
   }
