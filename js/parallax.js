@@ -39,6 +39,7 @@ function parallaxScroll(evt) {
       previousItem();
       slideDurationTimeout(slideDurationSetting);
     }
+    update_navBullets();
   }
 }
 
@@ -62,4 +63,10 @@ function nextItem() {
 function previousItem() {
   var $currentSlide = $(".background").eq(currentSlideNumber);
   $currentSlide.removeClass("down-scroll").addClass("up-scroll");
+}
+
+function update_navBullets() {
+  $(".navBullet").removeClass("active");
+  $(".navBullet").eq(currentSlideNumber).addClass("active");
+    var $nextNavBullet = $(".navBullet").eq(currentSlideNumber);
 }

@@ -1,9 +1,9 @@
       <div id="fp-nav" class="right" style="color: rgb(0, 0, 0);">
           <ul>
-              <li style="margin-top:0;"><a href="#nicer_way" class="active"><span></span></a></li>
-              <li><a href="#nicer_way" class=""><span></span></a></li>
-              <li><a href="#nicer_way" class=""><span></span></a></li>
-              <li><a href="#nicer_way" class=""><span></span></a></li>
+              <li style="margin-top:0;" class="navBullet"><a href="#nicer_way" class="active"><span></span></a></li>
+              <li class="navBullet"><a href="#nicer_way"><span></span></a></li>
+              <li class="navBullet"><a href="#nicer_way" ><span></span></a></li>
+              <li class="navBullet"><a href="#nicer_way" ><span></span></a></li>
           </ul>
       </div>
 
