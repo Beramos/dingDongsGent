@@ -43,6 +43,16 @@ function parallaxScroll(evt) {
   }
 }
 
+$( ".navBarItem" ).click(function() {
+// `this` is the DOM element that was clicked
+var index = $( ".navBarItem" ).index( this );
+
+currentSlideNumber = index
+console.log("This works clicked div: " + currentSlideNumber)
+update_navBullets();
+});
+
+
 // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
 function slideDurationTimeout(slideDuration) {
   setTimeout(function() {

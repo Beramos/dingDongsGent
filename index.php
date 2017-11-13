@@ -6,17 +6,17 @@
             <div>
                 <ul>
                     <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-                        <a href="#homepage-introduction" class="active">
+                        <a class="navBarItem">
                         Home
                         </a>
                     </li>
-                    <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a href="#homepage-technology" class="">Voorbeeld</a></li>
+                    <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a class="navBarItem">Voorbeeld</a></li>
                     <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-                    <a href="#homepage-tech-spotlight">
+                    <a class="navBarItem">
                     Contact
                     </a>
                     </li>
-                    <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a href="#homepage-why-music">Bestel</a></li>
+                    <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a class="navBarItem">Bestel</a></li>
                 </ul>
             </div>
         </div>
