@@ -167,7 +167,7 @@ a:hover{
     transition: opacity .2s ease,background .2s ease;
 }
 
-#fp-nav ul li a.active > span{
+#fp-nav ul li.active a > span{
     opacity: 1;
     background: #fff;
 }
