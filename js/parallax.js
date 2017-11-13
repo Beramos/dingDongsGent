@@ -47,9 +47,12 @@ $( ".navBarItem" ).click(function() {
 // `this` is the DOM element that was clicked
 var index = $( ".navBarItem" ).index( this );
 
+$(".background").removeClass("up-scroll").addClass("down-scroll");
+$(".background").eq(index).removeClass("down-scroll").addClass("up-scroll");
 currentSlideNumber = index
-console.log("This works clicked div: " + currentSlideNumber)
 update_navBullets();
+    
+    
 });
 
 
