@@ -63,8 +63,7 @@
   </section>
   <section class="background">
     <div class="content-wrapper">
-      <p class="content-title">Etiam consequat lectus.</p>
-      <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+        <?php echo do_shortcode("[add_to_cart id='61']"); ?>
       <table class="copyrightFooter">
           <tbody>
             <tr>
