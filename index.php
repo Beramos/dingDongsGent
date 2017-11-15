@@ -1,6 +1,6 @@
 <?php get_header(); ?>   
 
-  <section class="background">
+  <section id="main" class="background">
     <div class="content-wrapper">
         <div class="navigation" style="display: block;">
             <div>
