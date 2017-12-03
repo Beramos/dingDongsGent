@@ -36,39 +36,56 @@ img.secondImage {
 div#definition {
     float:left;
     color:#5D576B;
-    font-size:60px;
+    font-size: 60px;
+    line-height: 60px;
+    /*font-size:4vw;*/
     text-align: left;
     margin-left: 5%;
 }
 
 div#definition > p {
-    margin-bottom: 60px;
-    margin-top: 60px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 .row {
-    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap
 }
 
-.column {
-    float: left;
-    width: 20%;
+.column1 {
+    flex: 1;
+    height:100%;
     padding: 10px;
 }
 
-.column img {
-    margin-top: 12px;
+.column2 {
+    width: 50%;
+    height:100%;
+    padding: 10px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.column2 > p {
+    font-size: 2vw;
+    line-height: 3vw;
+    padding-right: 5vw;
+}
+
+.column1 img {
+    margin-top: 12px;
+    width: 100%;
+    max-width: 180px;
+    display: block;
+    margin: 0 auto;
+    min-width: 120px;
+    
 }
 
 p.nameDude{
-    font-size:40px;
+    font-size:3vw;
+    line-height: 3vw;
 }
 
 .copyrightFooter {
@@ -95,15 +112,21 @@ p.nameDude{
 
 .top-down {
     padding-bottom: 30px;
+    z-index: 30;
+    position: absolute;
+    top: 90%;
+    left: 50%;
 }
 
 .navigation {
     list-style: none;
     font-size: 20px;
     color: white;
-    max-width: 60%;
+    max-width: 100%;
     padding-top: 5%;
-    float: right;
+    position: absolute;
+    right: 10%;
+    top: 2%;
 }
 
 .navigation ul>li {

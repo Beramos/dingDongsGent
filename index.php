@@ -38,26 +38,20 @@
   </section>
   <section class="background">
     <div class="content-wrapper">
-        <div class="row" style="margin-left:40px;"> 
-          <div class="column">
-              <div class="row">
+        <div class="row" style="margin-left:5vw;"> 
+          <div class="column1">
                 <img src="figs/dude.png">
-                <p class="nameDude"> SHENAN STU </p>
+                <p class="nameDude"> SHENAN <br> STU </p>
                 <img src="figs/dude.png">
-                <p class="nameDude"> SWAN FRY </p>
-              </div>
+                <p class="nameDude"> SWAN <br> FRY </p>
           </div>
-          <div class="column">
-              <div class="row">
+          <div class="column1">
                 <img src="figs/dude.png">
-                <p class="nameDude"> HAUCK KEETON </p>
+                <p class="nameDude"> HAUCK <br> KEETON </p>
                 <img src="figs/dude.png">
-                <p class="nameDude"> MITCH COE </p>
-              </div>
+                <p class="nameDude"> MITCH <br> COE </p>
           </div>
-            <div class="column" style="width:50%;">
-            <div style="background-color:gray;width:100;height:1000px;"> Wat moet hier?</div>
-          </div>
+            <div class="column2"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> </div>
         </div>
     </div>
   </section>
