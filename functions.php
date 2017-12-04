@@ -77,11 +77,72 @@ function quantity_inputs_for_woocommerce_loop_add_to_cart_link( $html, $product 
 	return $html;
 }
 
-add_filter('woocommerce_add_to_cart_redirect', 'themeprefix_add_to_cart_redirect');
+/*add_filter('woocommerce_add_to_cart_redirect', 'themeprefix_add_to_cart_redirect');
 function themeprefix_add_to_cart_redirect() {
  global $woocommerce;
  $checkout_url = wc_get_checkout_url();
  return $checkout_url;
+}*/
+
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+/* Remove deliver to a different Addres*/
+add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
+  
+function custom_override_checkout_fields( $fields ) {
+    unset($fields['billing']['billing_first_name']);
+    unset($fields['billing']['billing_last_name']);
+    unset($fields['billing']['billing_company']);
+    unset($fields['billing']['billing_address_1']);
+    unset($fields['billing']['billing_address_2']);
+    unset($fields['billing']['billing_city']);
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_country']);
+    unset($fields['billing']['billing_state']);
+    unset($fields['billing']['billing_phone']);
+    unset($fields['order']['order_comments']);
+    unset($fields['billing']['billing_email']);
+    unset($fields['account']['account_username']);
+    unset($fields['account']['account_password']);
+    unset($fields['account']['account_password-2']);
+    
+    unset($fields['shipping']['shipping_first_name']);
+    unset($fields['shipping']['shipping_last_name']);
+    unset($fields['shipping']['shipping_company']);
+    unset($fields['shipping']['shipping_address_1']);
+    unset($fields['shipping']['shipping_address_2']);
+    unset($fields['shipping']['shipping_city']);
+    unset($fields['shipping']['shipping_postcode']);
+    unset($fields['shipping']['shipping_country']);
+    unset($fields['shipping']['shipping_state']);
+    
+    unset($fields['account']['account_username']);
+    
+    unset($fields['order']['order_comments']);
+    return $fields;
+}
+
+// define the wc_add_to_cart_message 
+function empty_wc_add_to_cart_message( $message, $product_id ) { 
+    return ''; 
+}; 
+         
+// add the filter 
+add_filter( 'wc_add_to_cart_message_html', 'empty_wc_add_to_cart_message', 10, 2 );
+
+// Add to basket becomes checkout button
+add_action( 'wc_after_add_to_cart_button', 'pay_on_add_to_basket');
+
+add_filter( 'woocommerce_add_cart_item_data', 'wdm_empty_cart', 10,  3);
+
+function wdm_empty_cart( $cart_item_data, $product_id, $variation_id ) 
+{
+
+    global $woocommerce;
+    $woocommerce->cart->empty_cart();
+
+    // Do nothing with the data and return
+    return $cart_item_data;
 }
 
 
