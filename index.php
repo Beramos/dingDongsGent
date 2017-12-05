@@ -57,11 +57,15 @@
   </section>
   <section class="background">
     <div class="content-wrapper">
-        <!--
-        <?php echo do_shortcode("[add_to_cart id='61']"); ?>
-        -->
-        <?php echo do_shortcode("[products id='61' class='buyMe']"); ?>
-        <?php echo do_shortcode("[woocommerce_checkout]"); ?>
+        <div class="row" style="margin-left:5vw;"> 
+            <div class="productColumn">
+                <?php echo do_shortcode("[products id='61' class='buyMe']"); ?>
+            </div>
+            <div class="columnCheckout">
+                <?php echo do_shortcode("[woocommerce_checkout id='checkoutTable']"); ?>
+            </div>
+        </div>
+        
       <table class="copyrightFooter">
           <tbody>
             <tr>

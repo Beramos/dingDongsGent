@@ -34,17 +34,6 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 <form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
     
-<div class="form-row place-order">
-
-            <noscript>Since your browser does not support JavaScript, or it is disabled, please ensure you click the &amp;lt;em&amp;gt;Update Totals&amp;lt;/em&amp;gt; button before placing your order. You may be charged more than the amount stated above if you fail to do so.&amp;lt;br/&amp;gt;&amp;lt;input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="Update totals" /&amp;gt;</noscript>
-
-            <input type="hidden" id="_wpnonce" name="_wpnonce" value="c82a4af261"><input type="hidden" name="_wp_http_referer" value="/woocommerce2/wp-admin/admin-ajax.php">
-
-            <input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Place order" data-value="Place order">
-
-
-</div>
-
 	<?php if ( $checkout->get_checkout_fields() ) : ?>
 
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>

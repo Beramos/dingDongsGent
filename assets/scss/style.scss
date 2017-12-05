@@ -83,6 +83,18 @@ div#definition > p {
     
 }
 
+.productColumn {
+    flex: 1;
+    height:100%;
+    padding: 10px;
+}
+
+.columnCheckout {
+    width: 50%;
+    height:100%;
+    margin-right: 10vw;
+}
+
 p.nameDude{
     font-size:3vw;
     line-height: 3vw;
@@ -194,6 +206,13 @@ a:hover{
     opacity: 1;
     background: #fff;
 }
+
+#order_review > table.shop_table {
+    border-left: none;
+    border-right: none;
+}
+
+
 
 /*----- Parallax shizzle -----*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
