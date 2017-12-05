@@ -145,5 +145,17 @@ function wdm_empty_cart( $cart_item_data, $product_id, $variation_id )
     return $cart_item_data;
 }
 
+// Translate add to basket
+add_filter( 'woocommerce_product_add_to_cart_text', 'woo_archive_custom_cart_button_text' );    // 2.1 +
+function woo_archive_custom_cart_button_text() {
+return __( 'Toevoegen aan winkelmandje', 'woocommerce' );
+}
+
+// Translate place order
+add_filter( 'woocommerce_order_button_text', 'woo_custom_order_button_text' ); 
+
+function woo_custom_order_button_text() {
+    return __( 'Bestel nu', 'woocommerce' ); 
+}
 
 ?>
