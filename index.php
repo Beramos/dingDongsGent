@@ -40,16 +40,12 @@
     <div class="content-wrapper">
         <div class="row" style="margin-left:5vw;"> 
           <div class="column1">
-                <img src="figs/dude.png">
-                <p class="nameDude"> SHENAN <br> STU </p>
-                <img src="figs/dude.png">
-                <p class="nameDude"> SWAN <br> FRY </p>
+                <img src="figs/dude1.png">
+                <img src="figs/dude2.png">
           </div>
           <div class="column1">
-                <img src="figs/dude.png">
-                <p class="nameDude"> HAUCK <br> KEETON </p>
-                <img src="figs/dude.png">
-                <p class="nameDude"> MITCH <br> COE </p>
+                <img src="figs/dude3.png">
+                <img src="figs/dude4.png">
           </div>
             <div class="column2"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> </div>
         </div>
@@ -62,7 +58,7 @@
                 <?php echo do_shortcode("[products id='61' class='buyMe']"); ?>
             </div>
             <div class="columnCheckout">
-                <?php echo do_shortcode("[woocommerce_checkout id='checkoutTable']"); ?>
+                <?php echo do_shortcode("[woocommerce_checkout]"); ?>
             </div>
         </div>
         

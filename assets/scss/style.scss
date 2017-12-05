@@ -74,11 +74,10 @@ div#definition > p {
 }
 
 .column1 img {
-    margin-top: 12px;
+    margin-bottom: 5vh;
     width: 100%;
-    max-width: 180px;
+    max-width: 400px;
     display: block;
-    margin: 0 auto;
     min-width: 120px;
     
 }
@@ -213,13 +212,17 @@ a:hover{
 }
 
 #payment_method_express_checkout {
- //   display: none;
+    display: none;
 }
 
 #order_review #payment ul li label {
     color: #5D576B;
 }
 
+.woocommerce ul.products > li.product {
+    width:60%;
+    margin: 0 auto;
+}
 
 /*----- Parallax shizzle -----*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
