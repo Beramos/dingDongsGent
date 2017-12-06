@@ -338,3 +338,28 @@ html, body {
       }
   }
 }
+
+/* ------------------------- 404 --------------------------------* */
+div#404 {
+    background-color: #EDEDED;
+}
+
+#404 h1 {
+    float:left;
+    color:#5D576B;
+    font-size: 60px;
+    line-height: 60px;
+    /*font-size:4vw;*/
+    text-align: left;
+    margin-left: 5%;
+}
+
+#404 .page-header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column nowrap;
+  color: #fff;
+  font-family: Montserrat;
+}
