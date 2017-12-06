@@ -125,28 +125,17 @@ function custom_override_checkout_fields( $fields ) {
     return $fields;
 }
 
+// Remove add to cart notification
 // define the wc_add_to_cart_message 
 function empty_wc_add_to_cart_message( $message, $product_id ) { 
     return ''; 
 }; 
-         
-// add the filter 
+
+// add the filter
 add_filter( 'wc_add_to_cart_message_html', 'empty_wc_add_to_cart_message', 10, 2 );
 
 // Add to basket becomes checkout button
 add_action( 'wc_after_add_to_cart_button', 'pay_on_add_to_basket');
-
-add_filter( 'woocommerce_add_cart_item_data', 'wdm_empty_cart', 10,  3);
-
-function wdm_empty_cart( $cart_item_data, $product_id, $variation_id ) 
-{
-
-    global $woocommerce;
-    $woocommerce->cart->empty_cart();
-
-    // Do nothing with the data and return
-    return $cart_item_data;
-}
 
 // Translate add to basket
 add_filter( 'woocommerce_product_add_to_cart_text', 'woo_archive_custom_cart_button_text' );    // 2.1 +
