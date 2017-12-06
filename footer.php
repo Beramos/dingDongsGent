@@ -11,14 +11,5 @@
       <?php wp_footer(); ?>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
     <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-    <script>
-        jQuery(document).ready(function() { 
-            var url = location.pathname;
-            //if (document.url.match(/dingdong/g)){
-            //     alert('bre!');    
-            //}
-                //alert(url);    
-        });
-    </script>
   </body>
 </html>

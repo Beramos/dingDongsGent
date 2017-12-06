@@ -49,16 +49,17 @@ function parallaxScroll(evt) {
 function jumpToItem(slideNumber) {
      $(".background").each( function(index){
          if (index<slideNumber) {
-             $(this).addClass("down-scroll");
+             $(this).addClass("down-scroll").removeClass("up-scroll");
          }
          else if (index==slideNumber) {
-             $(this).addClass("up-scroll");
+             $(this).addClass("up-scroll").removeClass("down-scroll");
          }
          else {
              $(this).removeClass("up-scroll").removeClass("up-scroll");
          }
      });
      currentSlideNumber = slideNumber;
+     localStorage.setItem("storedSlideNumber", currentSlideNumber);
      update_navBullets();
 }
 
@@ -67,6 +68,10 @@ $( ".navBarItem" ).click(function() {
     jumpToItem(index);
 });
 
+$( document ).ready(function() {
+   index = localStorage.getItem("storedSlideNumber"); 
+   jumpToItem(index);
+}); 
 
 /*$( ".navBarItem" ).click(function() {
 // `this` is the DOM element that was clicked
@@ -79,16 +84,6 @@ $( ".navBarItem" ).click(function() {
     update_navBullets();
     console.log($(".background"))
 });*/
- /*
-$( document ).ready(function() {
-   index = localStorage.getItem("storedSlideNumber"); 
-    //alert(index);
-    $(".background").removeClass("up-scroll").addClass("down-scroll");
-    $(".background").eq(index).removeClass("down-scroll").addClass("up-scroll");
-    $(".background").eq(totalSlideNumber-1).removeClass("down-scroll").removeClass("up-scroll")
-    update_navBullets();
-}); 
- */
 
 // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
 function slideDurationTimeout(slideDuration) {

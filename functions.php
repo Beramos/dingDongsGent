@@ -91,25 +91,6 @@ function empty_wc_add_to_cart_message( $message, $product_id ) {
     return ''; 
 }; 
          
-// add the filter 
-
-/*
-function custom_jquery_add_to_cart_script(){
-    <script type="text/javascript">
-        // Ready state
-        (function($){ 
-
-            $( document.body ).on( 'added_to_cart', function(){
-                alert("Breg");
-            });
-
-        })(jQuery); // "jQuery" Working with WP (added the $ alias as argument)
-    </script>
-}
-
-add_filter( 'wc_add_to_cart_message_html', 'custom_jquery_add_to_cart_script', 10, 2 );
-*/
-
 add_filter( 'wc_add_to_cart_message_html', 'empty_wc_add_to_cart_message', 10, 2 );
 
 add_filter( 'woocommerce_add_cart_item_data', 'wdm_empty_cart', 10,  3);
