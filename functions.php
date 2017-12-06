@@ -86,17 +86,28 @@ function custom_override_checkout_fields( $fields ) {
     return $fields;
 }
 
-// Remove add to cart notification
 // define the wc_add_to_cart_message 
 function empty_wc_add_to_cart_message( $message, $product_id ) { 
     return ''; 
 }; 
-
-// add the filter
+         
+// add the filter 
 add_filter( 'wc_add_to_cart_message_html', 'empty_wc_add_to_cart_message', 10, 2 );
 
 // Add to basket becomes checkout button
 add_action( 'wc_after_add_to_cart_button', 'pay_on_add_to_basket');
+
+add_filter( 'woocommerce_add_cart_item_data', 'wdm_empty_cart', 10,  3);
+
+function wdm_empty_cart( $cart_item_data, $product_id, $variation_id ) 
+{
+
+    global $woocommerce;
+    $woocommerce->cart->empty_cart();
+
+    // Do nothing with the data and return
+    return $cart_item_data;
+}
 
 // Translate add to basket
 add_filter( 'woocommerce_product_add_to_cart_text', 'woo_archive_custom_cart_button_text' );    // 2.1 +
@@ -109,4 +120,18 @@ add_filter( 'woocommerce_order_button_text', 'woo_custom_order_button_text' );
 
 function woo_custom_order_button_text() {
     return __( 'Bestel nu', 'woocommerce' ); 
-} ?>
+}
+
+add_filter( 'woocommerce_loop_add_to_cart_link', 'quantity_inputs_for_woocommerce_loop_add_to_cart_link', 10, 2 );
+function quantity_inputs_for_woocommerce_loop_add_to_cart_link( $html, $product ) {
+	if ( $product && $product->is_type( 'simple' ) && $product->is_purchasable() && $product->is_in_stock() && ! $product->is_sold_individually() ) {
+		$html = '<form action="' . esc_url( $product->add_to_cart_url() ) . '" class="cart" method="post" enctype="multipart/form-data">';
+		$html .= woocommerce_quantity_input( array(), $product, false );
+		$html .= '<button type="submit" class="button alt">' . esc_html( $product->add_to_cart_text() ) . '</button>';
+		$html .= '</form>';
+	}
+	return $html;
+}
+
+
+?>
