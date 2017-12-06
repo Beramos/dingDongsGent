@@ -40,21 +40,55 @@ function parallaxScroll(evt) {
       slideDurationTimeout(slideDurationSetting);
     }
     update_navBullets();
+    localStorage.setItem("storedSlideNumber", currentSlideNumber);
+    console.log(localStorage.getItem("storedSlideNumber"));
+    console.log("Actual number: " + currentSlideNumber)
   }
 }
 
-$( ".navBarItem" ).click(function() {
-// `this` is the DOM element that was clicked
-var index = $( ".navBarItem" ).index( this );
+function jumpToItem(slideNumber) {
+     $(".background").each( function(index){
+         if (index<slideNumber) {
+             $(this).addClass("down-scroll");
+         }
+         else if (index==slideNumber) {
+             $(this).addClass("up-scroll");
+         }
+         else {
+             $(this).removeClass("up-scroll").removeClass("up-scroll");
+         }
+     });
+     currentSlideNumber = slideNumber;
+     update_navBullets();
+}
 
-$(".background").removeClass("up-scroll").addClass("down-scroll");
-$(".background").eq(index).removeClass("down-scroll").addClass("up-scroll");
-currentSlideNumber = index
-update_navBullets();
-    
-    
+$( ".navBarItem" ).click(function() {
+    var index = $( ".navBarItem" ).index( this );
+    jumpToItem(index);
 });
 
+
+/*$( ".navBarItem" ).click(function() {
+// `this` is the DOM element that was clicked
+    var index = $( ".navBarItem" ).index( this );
+    $(".background").removeClass("up-scroll").addClass("down-scroll");
+    $(".background").eq(index).removeClass("down-scroll").addClass("up-scroll");
+    $(".background").eq(totalSlideNumber-1).removeClass("down-scroll").removeClass("up-scroll")
+    currentSlideNumber = index
+    localStorage.setItem("storedSlideNumber", currentSlideNumber);
+    update_navBullets();
+    console.log($(".background"))
+});*/
+ /*
+$( document ).ready(function() {
+   index = localStorage.getItem("storedSlideNumber"); 
+    //alert(index);
+    $(".background").removeClass("up-scroll").addClass("down-scroll");
+    $(".background").eq(index).removeClass("down-scroll").addClass("up-scroll");
+    $(".background").eq(totalSlideNumber-1).removeClass("down-scroll").removeClass("up-scroll")
+    update_navBullets();
+}); 
+ */
 
 // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
 function slideDurationTimeout(slideDuration) {
@@ -81,5 +115,7 @@ function previousItem() {
 function update_navBullets() {
   $(".navBullet").removeClass("active");
   $(".navBullet").eq(currentSlideNumber).addClass("active");
-    var $nextNavBullet = $(".navBullet").eq(currentSlideNumber);
+var $nextNavBullet = $(".navBullet").eq(currentSlideNumber);
 }
+
+// ---------------- Go back to the shop page on refresh after add-to-basket -------------//
