@@ -133,6 +133,7 @@ p.nameDude{
     position: absolute;
     top: 90%;
     left: 50%;
+    cursor: pointer;
 }
 
 .navigation {
@@ -230,6 +231,9 @@ a:hover{
     width:60%;
     margin: 0 auto;
 }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 
 /*----- Parallax shizzle -----*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);

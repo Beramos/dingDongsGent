@@ -21,7 +21,7 @@
             </div>
         </div>
       <img style="max-width:80%;margin:auto;" class="img-responsive center-block wrapper coverImage" src="figs/dingdongsCoverNoName.png">
-      <div data-elementsize="" class="top-down" style="transform: scale(0.949);">
+      <div data-elementsize="" class="top-down grow">
         <img src="figs/arrow-down.png">
       </div>
     </div>
