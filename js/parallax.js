@@ -41,8 +41,6 @@ function parallaxScroll(evt) {
     }
     update_navBullets();
     localStorage.setItem("storedSlideNumber", currentSlideNumber);
-    console.log(localStorage.getItem("storedSlideNumber"));
-    console.log("Actual number: " + currentSlideNumber)
   }
 }
 
@@ -82,18 +80,6 @@ $( document ).ready(function() {
    jumpToItem(index);
 }); 
 
-/*$( ".navBarItem" ).click(function() {
-// `this` is the DOM element that was clicked
-    var index = $( ".navBarItem" ).index( this );
-    $(".background").removeClass("up-scroll").addClass("down-scroll");
-    $(".background").eq(index).removeClass("down-scroll").addClass("up-scroll");
-    $(".background").eq(totalSlideNumber-1).removeClass("down-scroll").removeClass("up-scroll")
-    currentSlideNumber = index
-    localStorage.setItem("storedSlideNumber", currentSlideNumber);
-    update_navBullets();
-    console.log($(".background"))
-});*/
-
 // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
 function slideDurationTimeout(slideDuration) {
   setTimeout(function() {
@@ -121,5 +107,3 @@ function update_navBullets() {
   $(".navBullet").eq(currentSlideNumber).addClass("active");
 var $nextNavBullet = $(".navBullet").eq(currentSlideNumber);
 }
-
-// ---------------- Go back to the shop page on refresh after add-to-basket -------------//
