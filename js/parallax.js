@@ -68,6 +68,15 @@ $( ".navBarItem" ).click(function() {
     jumpToItem(index);
 });
 
+$( ".navBullet" ).click(function() {
+    var index = $( ".navBullet" ).index( this );
+    jumpToItem(index);
+});
+
+$( "div.top-down" ).click(function() {
+    jumpToItem(1);
+});
+
 $( document ).ready(function() {
    index = localStorage.getItem("storedSlideNumber"); 
    jumpToItem(index);
