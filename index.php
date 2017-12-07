@@ -30,8 +30,8 @@
     <div class="content-wrapper">
      <div id="definition">
         <p>DING . DONG (de; m; meervoud: dingdongs)</p>    
-        <p style="font-size:40px;"><sup>1</sup>geluid van een deurbel</p>    
-        <p style="font-size:40px;"><sup>2</sup>jonge, leuk uitziende kerel</p>    
+        <p class="subtitle"><sup>1</sup>geluid van een deurbel</p>    
+        <p class="subtitle"><sup>2</sup>jonge, leuk uitziende kerel</p>    
     </div>
      <img style="max-width:80%;margin:auto;" class="img-responsive center-block wrapper secondImage" src="figs/14-fietslever-dingdong-v2_noBackground.png">
     </div>

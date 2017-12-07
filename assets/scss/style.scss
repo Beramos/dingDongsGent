@@ -14,6 +14,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 /*
 @import url('../../bootstrap/css/bootstrap.css'); 
 @import url('../../bootstrap/css/bootstrap-responsive.css'); */
+
 body { 
      padding-top: 0; 
      padding-bottom: 0;
@@ -36,11 +37,16 @@ img.secondImage {
 div#definition {
     float:left;
     color:#5D576B;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
     /*font-size:4vw;*/
     text-align: left;
     margin-left: 5%;
+}
+
+div#definition .subtitle {
+    font-size: 2vw;
+    line-height: 2vw;
 }
 
 div#definition > p {
