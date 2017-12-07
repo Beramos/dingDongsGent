@@ -112,19 +112,25 @@ p.nameDude{
     width: 60%;
     border-top-style: solid;
     border-top-width: thin;
-    border-top-color: white;
+    border-top-color: #5d576b;
     margin-top: 5%;
+    color: #5d576b;
 }
 
 .copyrightFooter td {
     font-size: 20px;
     vertical-align: middle;
     padding-top: 15px;
+    
 }
 
 .share__mail {
     white-space: nowrap;
     width: 30%;
+}
+
+.share__mail > a {
+    color: #5d576b;
 }
 
 .top-down {
@@ -290,7 +296,7 @@ html, body {
     background-color: #5D576B;
   }
   &:nth-child(4) {
-    background-color: #77878B;
+    background-color: #EDEDED;
   }
 }
 
