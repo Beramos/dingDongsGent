@@ -225,6 +225,14 @@ a:hover{
     border-right: none;
 }
 
+#order_review > table.shop_table th {
+    color: #5D576B;
+}
+
+#order_review > table.shop_table td {
+    color: #716A82;
+}
+
 #payment_method_express_checkout {
     display: none;
 }
@@ -240,6 +248,44 @@ a:hover{
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
+
+
+/* ---------- Styling of order review ---------- */
+.woocommerce-loop-product__title{
+    color: #5D576B;
+}
+
+div#payment.woocommerce-checkout-payment{
+    background: #5D576B;
+}
+
+.payment_box.payment_method_express_checkout{
+    background: #EDEDED;
+}
+
+.payment_box.payment_method_express_checkout::before{
+    border: 1em solid #5D576B;  
+}
+
+div.payment_box::before{
+    border: 1em solid #5D576B;  
+}
+
+#order_review #payment ul li > label {
+    color: black;
+}
+
+.woocommerce-checkout #payment ul.payment_methods {
+    border-bottom: 1px solid black;
+}
+
+.woocommerce button.button.alt {
+    background-color: #63b995;
+}
+
+input#place_order.button.alt {
+    background-color: #63b995;
+}
 
 /*----- Parallax shizzle -----*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
