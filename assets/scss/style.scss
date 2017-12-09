@@ -440,4 +440,19 @@ div#404 {
       max-width:100%;
   }
 
+  div#definition {
+      font-size: 5vw;
+      line-height: 5vw;
+  }
+
+  div#definition .subtitle {
+      font-size: 4vw;
+      line-height: 4vw;
+  }
+
+  div#definition > p {
+      margin-bottom: 3vh;
+      margin-top: 3vh;
+  }
+
 }
