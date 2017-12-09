@@ -455,4 +455,20 @@ div#404 {
       margin-top: 3vh;
   }
 
+  .column2 {
+      width: 100%;
+      height:100%;
+      padding: 10px;
+  }
+
+  .column2 > p {
+      font-size: 3vw;
+  }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) {
+  .column1 img {
+    max-width: 120px;
+  }
+
 }
