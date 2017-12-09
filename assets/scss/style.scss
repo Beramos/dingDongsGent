@@ -12,11 +12,11 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 */
 
 /*
-@import url('../../bootstrap/css/bootstrap.css'); 
+@import url('../../bootstrap/css/bootstrap.css');
 @import url('../../bootstrap/css/bootstrap-responsive.css'); */
 
-body { 
-     padding-top: 0; 
+body {
+     padding-top: 0;
      padding-bottom: 0;
 }
 
@@ -33,6 +33,10 @@ img.secondImage {
     margin:auto;
 }
 
+section {
+  position: absolute;
+  left: 0;
+}
 
 div#definition {
     float:left;
@@ -85,7 +89,7 @@ div#definition > p {
     max-width: 400px;
     display: block;
     min-width: 120px;
-    
+
 }
 
 .productColumn {
@@ -121,7 +125,7 @@ p.nameDude{
     font-size: 20px;
     vertical-align: middle;
     padding-top: 15px;
-    
+
 }
 
 .share__mail {
@@ -264,11 +268,11 @@ div#payment.woocommerce-checkout-payment{
 }
 
 .payment_box.payment_method_express_checkout::before{
-    border: 1em solid #5D576B;  
+    border: 1em solid #5D576B;
 }
 
 div.payment_box::before{
-    border: 1em solid #5D576B;  
+    border: 1em solid #5D576B;
 }
 
 #order_review #payment ul li > label {
@@ -349,7 +353,7 @@ html, body {
 /* Set stacking context of slides */
 @for $i from 1 to ($slide-number + 1) {
     .background:nth-child(#{$i}) {
-        z-index: ($slide-number + 1) - $i; 
+        z-index: ($slide-number + 1) - $i;
     }
 }
 
@@ -425,4 +429,9 @@ div#404 {
   flex-flow: column nowrap;
   color: #fff;
   font-family: Montserrat;
+}
+
+/* --------------------- Mobile ------------------------ */
+@media screen and (device-width: 360px) and (device-height: 640px){
+
 }
