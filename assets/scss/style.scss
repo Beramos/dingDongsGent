@@ -174,10 +174,11 @@ a:hover{
 #fp-nav {
     margin: 0;
     padding: 0;
-    right:17px;
-    position: fixed;
-    top: 50%;
     z-index: 80;
+    position: absolute;
+    top: 50%;
+    right: 0.5%;
+    transform: translate(-50%, -50%);
 }
 
 #fp-nav ul {
