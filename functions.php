@@ -16,16 +16,17 @@ function add_my_scripts() {
   wp_enqueue_script( 'lodash');
 
   wp_register_script(
+    'throttle', // name your script so that you can attach other scripts and de-register, etc.
+    get_template_directory_uri() . '/js/throttle.js', // this is the location of your script file
+    array('jquery'),'', true);
+    wp_enqueue_script( 'throttle');
+
+  wp_register_script(
         'parallax', // name your script so that you can attach other scripts and de-register, etc.
         get_template_directory_uri() . '/js/parallax.js', // this is the location of your script file
         array('jquery'),'', true);
   wp_enqueue_script( 'parallax');
 
-  wp_register_script(
-        'throttle', // name your script so that you can attach other scripts and de-register, etc.
-        get_template_directory_uri() . '/js/throttle.js', // this is the location of your script file
-        array('jquery'),'', true);
-  wp_enqueue_script( 'throttle');
 }
 
 add_action( 'wp_enqueue_scripts', 'add_my_scripts' );
