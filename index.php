@@ -51,7 +51,7 @@
         </div>
     </div>
   </section>
-  <section class="background">
+  <section id="shop" class="background">
     <div class="content-wrapper">
         <div class="row" style="margin-left:5vw;">
             <div class="productColumn">
