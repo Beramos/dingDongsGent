@@ -1,8 +1,19 @@
- // ------------- VARIABLES ------------- //
+/*****************************************
+ **  Simple fullpage Parallax Scroll Effect
+ **  with touch support
+ **  https://codepen.io/franzk/pen/aNxQxP
+ **
+ **  based on work by Emily Hayman
+ **  https://codepen.io/eehayman/pen/qdGZJr
+ **
+ **  Further extended by Bram De Jaegher
+ *****************************************/
+
+// ------------- VARIABLES ------------- //
 var ticking = false;
 var isFirefox = (/Firefox/i.test(navigator.userAgent));
 var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
-var scrollSensitivitySetting = 30; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive) 
+var scrollSensitivitySetting = 30; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive)
 var slideDurationSetting = 600; //Amount of time for which slide is "locked"
 var currentSlideNumber = 0;
 var totalSlideNumber = $(".background").length;
@@ -44,6 +55,34 @@ function parallaxScroll(evt) {
   }
 }
 
+function touchScroll(ts, te) {
+  delta = te - ts;
+  console.log('para');
+  if (ticking != true) {
+    if (delta <= -scrollSensitivitySetting) {
+      //Down scroll
+      ticking = true;
+      if (currentSlideNumber !== totalSlideNumber - 1) {
+        currentSlideNumber++;
+        nextItem();
+      }
+      slideDurationTimeout(slideDurationSetting);
+    }
+    if (delta >= scrollSensitivitySetting) {
+      //Up scroll
+      ticking = true;
+      if (currentSlideNumber !== 0) {
+        currentSlideNumber--;
+      }
+      previousItem();
+      slideDurationTimeout(slideDurationSetting);
+    }
+    update_navBullets();
+    localStorage.setItem("storedSlideNumber", currentSlideNumber);
+  }
+}
+
+
 function jumpToItem(slideNumber) {
      $(".background").each( function(index){
          if (index<slideNumber) {
@@ -76,9 +115,9 @@ $( "div.top-down" ).click(function() {
 });
 
 $( document ).ready(function() {
-   index = localStorage.getItem("storedSlideNumber"); 
+   index = localStorage.getItem("storedSlideNumber");
    jumpToItem(index);
-}); 
+});
 
 // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
 function slideDurationTimeout(slideDuration) {
@@ -89,7 +128,17 @@ function slideDurationTimeout(slideDuration) {
 
 // ------------- ADD EVENT LISTENER ------------- //
 var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
-window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
+var ts;
+
+//window.addEventListener(mousewheelEvent, _.throttle(wheelScroll, 60), false);
+window.addEventListener(mousewheelEvent, $.throttle(60, wheelScroll), false);
+window.addEventListener("touchstart", function(e) {
+  ts = e.touches[0].clientY;
+}, false);
+window.addEventListener("touchend", function(e) {
+  var te = e.changedTouches[0].clientY;
+  touchScroll(ts, te);
+}, false);
 
 // ------------- SLIDE MOTION ------------- //
 function nextItem() {
@@ -102,6 +151,7 @@ function previousItem() {
   $currentSlide.removeClass("down-scroll").addClass("up-scroll");
 }
 
+// ------------- Navigation Bullets ------------- //
 function update_navBullets() {
   $(".navBullet").removeClass("active");
   $(".navBullet").eq(currentSlideNumber).addClass("active");
