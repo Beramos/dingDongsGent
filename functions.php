@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*function wpbootstrap_scripts_with_jquery()
 {
@@ -14,12 +14,18 @@ function add_my_scripts() {
         get_template_directory_uri() . '/js/lodash.js', // this is the location of your script file
         array('jquery'));
   wp_enqueue_script( 'lodash');
-    
+
   wp_register_script(
         'parallax', // name your script so that you can attach other scripts and de-register, etc.
         get_template_directory_uri() . '/js/parallax.js', // this is the location of your script file
         array('jquery'),'', true);
   wp_enqueue_script( 'parallax');
+
+  wp_register_script(
+        'throttle', // name your script so that you can attach other scripts and de-register, etc.
+        get_template_directory_uri() . '/js/throttle.js', // this is the location of your script file
+        array('jquery'),'', true);
+  wp_enqueue_script( 'throttle');
 }
 
 add_action( 'wp_enqueue_scripts', 'add_my_scripts' );
@@ -52,7 +58,7 @@ add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
 /* Remove deliver to a different Addres*/
 add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
-  
+
 function custom_override_checkout_fields( $fields ) {
     unset($fields['billing']['billing_first_name']);
     unset($fields['billing']['billing_last_name']);
@@ -69,7 +75,7 @@ function custom_override_checkout_fields( $fields ) {
     unset($fields['account']['account_username']);
     unset($fields['account']['account_password']);
     unset($fields['account']['account_password-2']);
-    
+
     unset($fields['shipping']['shipping_first_name']);
     unset($fields['shipping']['shipping_last_name']);
     unset($fields['shipping']['shipping_company']);
@@ -79,23 +85,23 @@ function custom_override_checkout_fields( $fields ) {
     unset($fields['shipping']['shipping_postcode']);
     unset($fields['shipping']['shipping_country']);
     unset($fields['shipping']['shipping_state']);
-    
+
     unset($fields['account']['account_username']);
-    
+
     unset($fields['order']['order_comments']);
     return $fields;
 }
 
-// define the wc_add_to_cart_message 
-function empty_wc_add_to_cart_message( $message, $product_id ) { 
-    return ''; 
-}; 
-         
+// define the wc_add_to_cart_message
+function empty_wc_add_to_cart_message( $message, $product_id ) {
+    return '';
+};
+
 add_filter( 'wc_add_to_cart_message_html', 'empty_wc_add_to_cart_message', 10, 2 );
 
 add_filter( 'woocommerce_add_cart_item_data', 'wdm_empty_cart', 10,  3);
 
-function wdm_empty_cart( $cart_item_data, $product_id, $variation_id ) 
+function wdm_empty_cart( $cart_item_data, $product_id, $variation_id )
 {
 
     global $woocommerce;
@@ -112,10 +118,10 @@ return __( 'Toevoegen aan winkelmandje', 'woocommerce' );
 }
 
 // Translate place order
-add_filter( 'woocommerce_order_button_text', 'woo_custom_order_button_text' ); 
+add_filter( 'woocommerce_order_button_text', 'woo_custom_order_button_text' );
 
 function woo_custom_order_button_text() {
-    return __( 'Bestel nu', 'woocommerce' ); 
+    return __( 'Bestel nu', 'woocommerce' );
 }
 
 add_filter( 'woocommerce_loop_add_to_cart_link', 'quantity_inputs_for_woocommerce_loop_add_to_cart_link', 10, 2 );
