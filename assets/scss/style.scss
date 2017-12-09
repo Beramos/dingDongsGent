@@ -435,5 +435,7 @@ div#404 {
 
 /* --------------------- Mobile ------------------------ */
 @media screen and (device-width: 360px) and (device-height: 640px){
-
+  img.coverImage {
+      max-width:100%;
+  }
 }

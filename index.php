@@ -1,4 +1,4 @@
-<?php get_header(); ?>   
+<?php get_header(); ?>
 
   <section id="main" class="background">
     <div class="content-wrapper">
@@ -20,7 +20,7 @@
                 </ul>
             </div>
         </div>
-      <img style="max-width:80%;margin:auto;" class="img-responsive center-block wrapper coverImage" src="figs/dingdongsCoverNoName.png">
+      <img class="img-responsive center-block wrapper coverImage" src="figs/dingdongsCoverNoName.png">
       <div data-elementsize="" class="top-down grow">
         <img src="figs/arrow-down.png">
       </div>
@@ -29,16 +29,16 @@
   <section class="background" id>
     <div class="content-wrapper">
      <div id="definition">
-        <p>DING . DONG (de; m; meervoud: dingdongs)</p>    
-        <p class="subtitle"><sup>1</sup>geluid van een deurbel</p>    
-        <p class="subtitle"><sup>2</sup>jonge, leuk uitziende kerel</p>    
+        <p>DING . DONG (de; m; meervoud: dingdongs)</p>
+        <p class="subtitle"><sup>1</sup>geluid van een deurbel</p>
+        <p class="subtitle"><sup>2</sup>jonge, leuk uitziende kerel</p>
     </div>
      <img style="max-width:80%;margin:auto;" class="img-responsive center-block wrapper secondImage" src="figs/14-fietslever-dingdong-v2_noBackground.png">
     </div>
   </section>
   <section class="background">
     <div class="content-wrapper">
-        <div class="row" style="margin-left:5vw;"> 
+        <div class="row" style="margin-left:5vw;">
           <div class="column1">
                 <img src="figs/dude1.png">
                 <img src="figs/dude2.png">
@@ -53,7 +53,7 @@
   </section>
   <section class="background">
     <div class="content-wrapper">
-        <div class="row" style="margin-left:5vw;"> 
+        <div class="row" style="margin-left:5vw;">
             <div class="productColumn">
                 <?php echo do_shortcode("[products id='61' class='buyMe']"); ?>
             </div>
@@ -61,7 +61,7 @@
                 <?php echo do_shortcode("[woocommerce_checkout]"); ?>
             </div>
         </div>
-        
+
       <table class="copyrightFooter">
           <tbody>
             <tr>
