@@ -143,6 +143,7 @@ p.nameDude{
     position: absolute;
     top: 90%;
     left: 50%;
+    transform: translate(-50%, 0%);
     cursor: pointer;
 }
 
@@ -434,8 +435,9 @@ div#404 {
 }
 
 /* --------------------- Mobile ------------------------ */
-@media screen and (device-width: 360px) and (device-height: 640px){
+@media screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait){
   img.coverImage {
       max-width:100%;
   }
+
 }
