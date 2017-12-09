@@ -19,7 +19,7 @@ var currentSlideNumber = 0;
 var totalSlideNumber = $(".background").length;
 
 // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
-function parallaxScroll(evt) {
+function wheelScroll(evt) {
   if (isFirefox) {
     //Set delta for Firefox
     delta = evt.detail * (-120);
