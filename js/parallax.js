@@ -18,6 +18,9 @@ var slideDurationSetting = 600; //Amount of time for which slide is "locked"
 var currentSlideNumber = 0;
 var totalSlideNumber = $(".background").length;
 
+// ------------- Remove URL bar ----------------//
+window.addEventListener("load", function() { window. scrollTo(0, 0); });
+
 // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 function wheelScroll(evt) {
   if (isFirefox) {
@@ -117,6 +120,9 @@ $( "div.top-down" ).click(function() {
 $( document ).ready(function() {
    index = localStorage.getItem("storedSlideNumber");
    jumpToItem(index);
+   //var height = window.innerHeight;
+   //var width = window.innerWidth;
+   //$(".background").height(height).width(width);
 });
 
 // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //

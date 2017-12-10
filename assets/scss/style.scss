@@ -435,7 +435,7 @@ div#404 {
 }
 
 /* --------------------- Mobile ------------------------ */
-@media screen and (max-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait){
+@media screen and (max-device-width: 500px) and (max-device-height: 800px) and (orientation: portrait){
 
   img.coverImage {
       max-width:100%;
@@ -475,19 +475,55 @@ div#404 {
     vertical-align: middle;
     padding-top: 3vw;
   }
+  
+    #shop .row {
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+    }
+    
+    form.cart{
+        display: inline;
+    }
+    
+    div.quantity{
+        display: inline-block;
+    }
+    
+    .woocommerce ul.products li.product .price {
+        display: inline;
+        margin-bottom: 4px;
+        padding-right: 5px;
+    }
+    
+    .post-26.product.type-product.purchasable.product-type-simple {
+        margin-bottom: 0;
+    }
+    
+    div.productColumn {
+        position: relative;
+        top: -7vh;
+        margin-bottom: 0;
+    }
+    
+    div.columnCheckout {
+        position: relative;
+        top: -7vh;
+        width: 100%
+        //position: absolute;
+        //bottom: 2vh;
+    }
+    
+    .copyrightFooter {
+        width: 90%;
+    }
 }
 
-@media screen and (max-device-width: 640px) and (max-device-height: 360px) and (orientation: landscape) {
+@media screen and (max-device-width: 800px) and (max-device-height: 500px) and (orientation: landscape) {
 
-/*  #shop{
-    -ms-transform: scale(0.5, 0.5);
-    -webkit-transform: scale(0.5, 0.5);
-    transform: scale(0.5, 0.5);
-  }
-  .woocommerce img {
-  max-width: 30% !important;
-}
-*/
+    div.navigation {
+        padding-top: 0.5%;
+    }
 
   .columnCheckout {
     margin-right: 5vw;
@@ -521,4 +557,11 @@ div#404 {
     -webkit-transform: scale(0.8, 0.8);
     transform: scale(0.8, 0.8);
   }
+}
+
+@media screen and (max-device-width: 635px) and (orientation: landscape) { 
+  .column1 img {
+    max-width: 120px;
+  }
+
 }
