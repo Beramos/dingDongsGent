@@ -516,10 +516,64 @@ div#404 {
     
     .copyrightFooter {
         width: 90%;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
     
     .top-down {
     top: 80%;
+    }
+}
+
+@media screen and (max-device-width: 500px) and (max-device-height: 675px) and (orientation: portrait){
+   #shop .row {
+    -ms-transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
+  } 
+ div.productColumn {
+        position: relative;
+        top: -20vh;
+        margin-bottom: 0;
+    }
+    
+    div.columnCheckout {
+        position: relative;
+        top: -20vh;
+        width: 100%
+        //position: absolute;
+        //bottom: 2vh;
+    }
+}
+
+@media screen and (max-device-width: 500px) and (max-device-height: 635px) and (orientation: portrait){
+   #shop .row {
+    -ms-transform: scale(0.6, 0.6);
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+  } 
+ div.productColumn {
+        position: relative;
+        top: -30vh;
+        margin-bottom: 0;
+    }
+    
+    div.columnCheckout {
+        position: relative;
+        top: -30vh;
+        width: 100%
+        //position: absolute;
+        //bottom: 2vh;
+    }
+    
+    .copyrightFooter {
+        width: 90%;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
 }
 
