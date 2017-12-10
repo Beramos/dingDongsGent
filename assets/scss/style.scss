@@ -502,13 +502,13 @@ div#404 {
     
     div.productColumn {
         position: relative;
-        top: -7vh;
+        top: -11vh;
         margin-bottom: 0;
     }
     
     div.columnCheckout {
         position: relative;
-        top: -7vh;
+        top: -11vh;
         width: 100%
         //position: absolute;
         //bottom: 2vh;
@@ -516,6 +516,10 @@ div#404 {
     
     .copyrightFooter {
         width: 90%;
+    }
+    
+    .top-down {
+    top: 80%;
     }
 }
 
