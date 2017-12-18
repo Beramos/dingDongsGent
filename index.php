@@ -20,9 +20,9 @@
                 </ul>
             </div>
         </div>
-      <img class="img-responsive center-block wrapper coverImage" src="figs/dingdongsCoverNoName.png">
+      <img class="img-responsive center-block wrapper coverImage" src="/dingdong/figs/dingdongsCoverNoName.png">
       <div data-elementsize="" class="top-down grow">
-        <img src="figs/arrow-down.png">
+        <img src="/figs/arrow-down.png">
       </div>
     </div>
   </section>
@@ -33,19 +33,19 @@
         <p class="subtitle"><sup>1</sup>geluid van een deurbel</p>
         <p class="subtitle"><sup>2</sup>jonge, leuk uitziende kerel</p>
     </div>
-     <img style="max-width:80%;margin:auto;" class="img-responsive center-block wrapper secondImage" src="figs/14-fietslever-dingdong-v2_noBackground.png">
+     <img style="max-width:80%;margin:auto;" class="img-responsive center-block wrapper secondImage" src="/figs/14-fietslever-dingdong-v2_noBackground.png">
     </div>
   </section>
   <section class="background">
     <div class="content-wrapper">
         <div class="row" style="margin-left:5vw;">
           <div class="column1">
-                <img src="figs/dude1.png">
-                <img src="figs/dude2.png">
+                <img src="/figs/dude1.png">
+                <img src="/figs/dude2.png">
           </div>
           <div class="column1">
-                <img src="figs/dude3.png">
-                <img src="figs/dude4.png">
+                <img src="/figs/dude3.png">
+                <img src="/figs/dude4.png">
           </div>
             <div class="column2"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> </div>
         </div>
