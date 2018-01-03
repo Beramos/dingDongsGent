@@ -67,7 +67,7 @@
             <tr>
               <td>Ding Dongs Gent ©2017
               </td>
-              <td class="share__mail"><a href="mailto:info@ddg.bd">info<span>@</span>ddg.be</a></td>
+              <td class="share__mail"><a href="mailto:info@dingdongs.gent">info<span>@</span>dingdongs.gent</a></td>
             </tr>
           </tbody>
         </table>
