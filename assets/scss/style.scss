@@ -25,6 +25,8 @@ img.coverImage {
     max-width:70%;
     max-height: 80%;
     margin:auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 img.secondImage {
@@ -438,7 +440,7 @@ div#404 {
 @media screen and (max-device-width: 500px) and (max-device-height: 850px) and (orientation: portrait){
 
   img.coverImage {
-      max-width:100%;
+      max-width:80%;
   }
 
   div#definition {

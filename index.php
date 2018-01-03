@@ -20,7 +20,7 @@
                 </ul>
             </div>
         </div>
-      <img class="img-responsive center-block wrapper coverImage" src="/dingdong/figs/dingdongsCoverNoName.png">
+      <img class="img-responsive center-block wrapper coverImage" src="/figs/dingdongsCoverNoName.png">
       <div data-elementsize="" class="top-down grow">
         <img src="/figs/arrow-down.png">
       </div>
