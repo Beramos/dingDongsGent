@@ -130,6 +130,10 @@ p.nameDude{
 
 }
 
+#WMHead {
+    height: 10vh;
+}
+
 .share__mail {
     white-space: nowrap;
     width: 30%;
@@ -210,6 +214,57 @@ a:hover{
     text-decoration-color: #141414;
 }
 
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons>li {
+    display: inline-block;
+    padding: 0 1.25em 0 0;
+}
+
+ul.icons a {
+    color: #5d576b;
+}
+
+ul.icons a:hover {
+    color: #F0C46D;
+}
+
+ul.icons>li:last-child {
+    padding-right: 0 !important;
+}
+
+/*				
+.footerIcon {
+    border-radius: $size-border-radius;
+    border: solid $size-border-width $color-border;
+    color: $color-fg-light !important;
+    display: inline-block;
+    font-size: 1.25em;
+    height: 2.75em;
+    line-height: 2.75em;
+    text-align: center;
+    width: 2.75em;
+}*/
+/*				
+				a.icon {
+					@include vendor-property('transition', 'background-color #{$duration-transition} ease-in-out, color #{$duration-transition} ease-in-out');
+					
+					&:hover {
+						background-color: $color-border-bg;
+					}
+					
+					&:active {
+						background-color: $color-border2-bg;
+					}
+				}
+			}
+		}
+}
+**/
 
 #fp-nav ul li p span{
     top: 2px;
