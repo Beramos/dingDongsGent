@@ -65,15 +65,15 @@
       <table class="copyrightFooter">
           <tbody>
             <tr>
-              <td> Webmaster <img id="WMHead" src="/figs/headWM.png"></td>
+              <td class="WMColumn"> Webmaster <img id="WMHead" src="/figs/headWM.png"></td>
               <td> <b>Ding Dongs Gent ©2017 </b>
               </td>
               <!--<td class="share__mail"><a href="mailto:info@dingdongs.gent">info<span>@</span>dingdongs.gent</a></td>-->
               <td>
                   <ul class="icons">
-                    <li><a href="mailto:info@dingdongs.gent"><i class="fa fa-envelope footerIcon" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter footerIcon" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/dingdongsgent/"><i class="fa fa-facebook footerIcon" aria-hidden="true"></i></a></li>
+                    <li class="icon"><a href="mailto:info@dingdongs.gent"><i class="fa fa-envelope footerIcon" aria-hidden="true"></i></a></li>
+                    <li class="icon"><a href=""><i class="fa fa-twitter footerIcon" aria-hidden="true"></i></a></li>
+                    <li class="icon"><a href="https://www.facebook.com/dingdongsgent/"><i class="fa fa-facebook footerIcon" aria-hidden="true"></i></a></li>
                 </ul>
               </td>
             </tr>
