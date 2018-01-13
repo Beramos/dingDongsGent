@@ -47,7 +47,13 @@
                 <img src="/figs/dude3.png">
                 <img src="/figs/dude4.png">
           </div>
-            <div class="column2"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> </div>
+            <div class="column2">
+                <p>Heb je een vraag over het ontwerp of wil je gewoon discussiëren over dingdongs? 
+                    Het team achter Dingdongs in Gent vindt jouw mening belangrijk! </p>
+                <p>Mail naar <a href="mailto:info@dingdongs.gent">info@dingdongs.gent</a>, tweet via <a href="https://twitter.com/intent/tweet?text=#dingdongsgent">#dingdongsgent</a> of like <a href="https://www.facebook.com/dingdongsgent/">onze Facebookpagina!</a></p>
+                <p><i>Dingdongs in Gent is een uitgave van Baryon</i></p>
+                <img src="/figs/baryon-logo-dingdongs-v01.jpg">
+            </div>
         </div>
     </div>
   </section>
