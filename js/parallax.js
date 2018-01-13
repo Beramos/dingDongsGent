@@ -38,7 +38,11 @@ function wheelScroll(evt) {
     if (delta <= -scrollSensitivitySetting) {
       //Down scroll
       ticking = true;
-      if (currentSlideNumber !== totalSlideNumber - 1) {
+      if (parseInt(currentSlideNumber) !== totalSlideNumber - 1 ) {
+          //console.log("I'm here");
+          //console.log(currentSlideNumber);
+          //console.log(totalSlideNumber);
+          //console.log(currentSlideNumber !== totalSlideNumber - 1)
         currentSlideNumber++;
         nextItem();
       }
@@ -84,7 +88,6 @@ function touchScroll(ts, te) {
     localStorage.setItem("storedSlideNumber", currentSlideNumber);
   }
 }
-
 
 function jumpToItem(slideNumber) {
      $(".background").each( function(index){

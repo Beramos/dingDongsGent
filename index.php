@@ -50,8 +50,10 @@
             <div class="column2">
                 <p>Heb je een vraag over het ontwerp of wil je gewoon discussiëren over dingdongs? 
                     Het team achter Dingdongs in Gent vindt jouw mening belangrijk! </p>
-                <p>Mail naar <a href="mailto:info@dingdongs.gent">info@dingdongs.gent</a>, tweet via <a href="https://twitter.com/intent/tweet?text=#dingdongsgent">#dingdongsgent</a> of like <a href="https://www.facebook.com/dingdongsgent/">onze Facebookpagina!</a></p>
-                <p><i>Dingdongs in Gent is een uitgave van Baryon</i></p>
+                <p><a href="mailto:info@dingdongs.gent">Mail naar  info@dingdongs.gent</a>, <a href="https://twitter.com/intent/tweet?hashtags=dingdongsgent">tweet <i class="fa fa-twitter" style="height: 1vw;color:#00aced;" aria-hidden="true"></i> via #dingdongsgent</a>  of <a href="https://www.facebook.com/dingdongsgent/">like <i class="fa fa-thumbs-up" style="height: 1vw;" aria-hidden="true"></i> onze Facebookpagina! </a></p>
+                <div>
+                    <p class="center-block"><i>Dingdongs in Gent is een uitgave van Baryon</i></p> 
+                </div>
                 <img src="/figs/baryon-logo-dingdongs-v01.jpg">
             </div>
         </div>

@@ -80,9 +80,18 @@ div#definition > p {
 }
 
 .column2 > p {
-    font-size: 2vw;
-    line-height: 3vw;
+    font-size: 1vw;
+    line-height: 1.2vw;
     padding-right: 5vw;
+    padding-top: 2vh;
+    text-align: justify;
+}
+
+.column2 > div > p {
+    font-size: 1vw;
+    line-height: 1.2vw;
+    padding-right: 5vw;
+    padding-top: 2.5vh;
 }
 
 .column1 img {
